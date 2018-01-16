@@ -25,4 +25,5 @@ push: loacal저장소에 있는 변경사항들을 원격저장소로 올리리�
   1. reset과 revert가 있는데 reset과revetr의 차이는 revert의 경우는 원래 상태로 되돌리긴하는데 새로운 commit을 하면서 되돌리는 것이다. reset은 삭제 하는것임
 revert 할경우는 역순으로 가면서 하나씩 해줘야함
 
-* [markdown 사용법](http://blog.naver.com/PostView.nhn?blogId=future_creator&logNo=220724387406&parentCategoryNo=&categoryNo=14&viewDate=&isShowPopularPosts=false&from=postView)
+* [markdown 사용법](https://www.evernote.com/shard/s3/sh/128acb97-d3c5-4eda-aa1b-c71ecd2f3a15/54a14ebd5d4ce7507bf78e5af640d0e9)
+  1. 일반 텍스트 문서의 양식을 편집하는 문법이다[1]. README 파일이나 온새라인 문서, 혹은 일반 텍스트 편집기로 문서 양식을 편집할 때 쓰인다. 마크다운을 이용해 작성된 문서는 쉽게 HTML 등 다른 문서형태로 변환이 가능하다.
