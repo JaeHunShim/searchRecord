@@ -28,4 +28,43 @@ revert 할경우는 역순으로 가면서 하나씩 해줘야함
 * [markdown 사용법](https://www.evernote.com/shard/s3/sh/128acb97-d3c5-4eda-aa1b-c71ecd2f3a15/54a14ebd5d4ce7507bf78e5af640d0e9)
   1. 일반 텍스트 문서의 양식을 편집하는 문법이다[1]. README 파일이나 온새라인 문서, 혹은 일반 텍스트 편집기로 문서 양식을 편집할 때 쓰인다. 마크다운을 이용해 작성된 문서는 쉽게 HTML 등 다른 문서형태로 변환이 가능하다.
 * [JQuery 달력  plug-in](https://translate.google.co.kr/translate?hl=ko&sl=en&u=https://www.jqueryscript.net/tags.php%3F/Calendar/&prev=search) 및 [사용방법](http://iwbtbitj.tistory.com/98)
-  1. 추후에 이용할 일이 많을거 같다. 날짜별로 스케쥴 관리하는 프로그램들도 있고, 그리고 게시판에서도 날짜별로 등록글을 볼수 있게 할수도 있게 끔 만드는데 필요할수 있을거 같다.  
+  1. 추후에 이용할 일이 많을거 같다. 날짜별로 스케쥴 관리하는 프로그램들도 있고, 그리고 게시판에서도 날짜별로 등록글을 볼수 있게 할수도 있게 끔 만드는데 필요할수 있을거 같다.
+* [Java 용어에 대한 정리 ](http://rockdrumy.tistory.com/214)
+  1. **static**
+      * 우선 인스턴스를 생성하면 각각의 인스턴스들은 서로 독립적이기때문에 서로다른값들을 가지게 된다. 하지만 따라서 각 인스턴스들이 공통적으로 같은 값을 유지해야 하기때문에 그럴때 static을 사용한다.
+      예를들어서 카드게임이 있다고 하면 카드의 넓이나 크기들은 똑같지만 무늬나 숫자같은 경우는 계속 바뀌게 된다. 이럴때  static을 어디에 적용해야 할까? 바로 넓이나 높이에 대한 인스턴스에 static을 붙이게 되면  그 값을 계속 유지하게 되는 것이다.  이러한 장점뿐만아니라 static이 붙은 메서드는 따로 인스턴스를 생성하지 않고  즉 , MemberDAO dao = new MemberDao() 이런식으로 객체를 생성하지 않아도 그냥 dao.내가 원하는 함수(); 이런식으로 불러올수 있다.
+      그래서 속도면에서도  인스턴스 생성하는 방식보다 빠르다고 할수 있다.
+<예제>
+        class Jaehun{
+        int age=35;
+
+        static int key= 185;
+        int age2=36;
+        static void Jaehun2(){
+        System.out.println(age);
+        static 변수가 아니기때문에 객체를 생성하고 써먹어야 한다 써먹기 위해서는
+        Jaehun j= new Jaehun();
+        System.out.println(j.age);
+        이런식으로 인스턴스를 생성한 후에 사용할수 있다.
+        System.out.println(key);  
+        staitc 변수이기 때문에 그냥 호출 가능
+        }
+        void Jaehun3() {
+        System.out.println(age);  
+        인스턴스 메소드에서는 바로 불러오는게 가능하다.
+        System.out.println(age2);
+        System.out.println(key);
+        	}
+        }
+  2. **subString,lastIndex**
+      *  마지막으로 발견된 문자열을 모두 반환하게 된다. 예를들어서
+            String name="jaehuniya";
+
+            System.out.println(name.lastIndexOf("a"));  8출력
+            System.out.println(name.indexOf("a"));  1출력
+            System.out.println(name.subString(2));  jae출력
+
+  3. **toUpeerCase()** 모든 문자열을 대문자로 치환한다.
+  4. **File(File parent,String child):** parent 객체 폴더의 child 라는 파일에 대한 file객체를 생성한다. 쉽게 말하면 parent 폴더의 child랄 파일의 객체를 생성한다는 의미.
+  5. **File.selector:** " / " ," \ "같은 파일의 경로를 분리해주는 메소드이다.
+  6. [DecimalFormat()](http://javafactory.tistory.com/1225) 특정메소드를  형식으로 바꾸는 것 즉, DecimalFormat("00") 이런식으로 하면 형식은 십의자리로 바꾸겠다는 소리임
