@@ -29,7 +29,7 @@ revert 할경우는 역순으로 가면서 하나씩 해줘야함
   1. 일반 텍스트 문서의 양식을 편집하는 문법이다[1]. README 파일이나 온새라인 문서, 혹은 일반 텍스트 편집기로 문서 양식을 편집할 때 쓰인다. 마크다운을 이용해 작성된 문서는 쉽게 HTML 등 다른 문서형태로 변환이 가능하다.
 * [JQuery 달력  plug-in](https://translate.google.co.kr/translate?hl=ko&sl=en&u=https://www.jqueryscript.net/tags.php%3F/Calendar/&prev=search) 및 [사용방법](http://iwbtbitj.tistory.com/98)
   1. 추후에 이용할 일이 많을거 같다. 날짜별로 스케쥴 관리하는 프로그램들도 있고, 그리고 게시판에서도 날짜별로 등록글을 볼수 있게 할수도 있게 끔 만드는데 필요할수 있을거 같다.
-* [Java 용어에 대한 정리 ](http://rockdrumy.tistory.com/214)
+* [Java  용어에 대한 정리 ](http://rockdrumy.tistory.com/214)
   1. **static**
       * 우선 인스턴스를 생성하면 각각의 인스턴스들은 서로 독립적이기때문에 서로다른값들을 가지게 된다. 하지만 따라서 각 인스턴스들이 공통적으로 같은 값을 유지해야 하기때문에 그럴때 static을 사용한다.
       예를들어서 카드게임이 있다고 하면 카드의 넓이나 크기들은 똑같지만 무늬나 숫자같은 경우는 계속 바뀌게 된다. 이럴때  static을 어디에 적용해야 할까? 바로 넓이나 높이에 대한 인스턴스에 static을 붙이게 되면  그 값을 계속 유지하게 되는 것이다.  이러한 장점뿐만아니라 static이 붙은 메서드는 따로 인스턴스를 생성하지 않고  즉 , MemberDAO dao = new MemberDao() 이런식으로 객체를 생성하지 않아도 그냥 dao.내가 원하는 함수(); 이런식으로 불러올수 있다.
@@ -68,3 +68,11 @@ revert 할경우는 역순으로 가면서 하나씩 해줘야함
   4. **File(File parent,String child):** parent 객체 폴더의 child 라는 파일에 대한 file객체를 생성한다. 쉽게 말하면 parent 폴더의 child랄 파일의 객체를 생성한다는 의미.
   5. **File.selector:** " / " ," \ "같은 파일의 경로를 분리해주는 메소드이다.
   6. [DecimalFormat()](http://javafactory.tistory.com/1225) 특정메소드를  형식으로 바꾸는 것 즉, DecimalFormat("00") 이런식으로 하면 형식은 십의자리로 바꾸겠다는 소리임
+* [데이터 바인딩](https://m.blog.naver.com/PostView.nhn?blogId=yjkang23&logNo=80040165420&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F)
+  1. 화면에서 보이는 객체와 데이터를 일치시키는것이 중요하다.
+즉 웹페이지의 경우는 html과 데이터가 함께 공존한다. 이때 사용자는 데이터를 조작하기 위해서 서버에 요청하고 서버는 데이터를 엑세스하고 이걸 다시 사용자의 요구사항에 맞는 형식으로 만든후에 다시 view에 전송한다. 이러한 번거로움이나 문제를 해결하는것이 데이터 바인딩으로서 데이터와html을 구분하여 데이터를 조작하기 대문에 서버에서 왔다갔다 할필요가 없어진다. 즉 게시판을 만들때 썼던 handlebar 템플릿이 바로 바인딩 역할을 하게 해주는 템플릿이다 . (html 크드에서 데이터만뽑아오니까)
+순서는
+      *  핸드바 템플릿 가지고오기
+      * 핸드바 템플릿 컴파일하기
+      * 데이터 바인딩하기
+      * 결과물을 DOM 에 추가
