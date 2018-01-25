@@ -81,3 +81,6 @@ revert 할경우는 역순으로 가면서 하나씩 해줘야함
   * **결과물을 DOM 에 추가**
 * **[프로그래밍인강1](https://programmers.co.kr/learn/courses/2):**  프로그래머스 인강사이트
 * **[프로그래밍인강2](https://opentutorials.org/course/1):** 생활코딩
+* **Chrome에서 쿠키정보보기**
+  1.  F12로 개발도구를 연다
+  2. Application 클릭 --> 왼쪽에 Cookies 를 클릭하면 현제 쿠키정보를 볼수 있음.
